@@ -84,6 +84,7 @@ You do not need to change the VAE (vae.py) or training script (train.py) to add 
   - To use your own dataset and/or pretrained VAE model, specify the model path in the run_mcmc.py arguments.
   - To modify the VAE architecture, see vae.py.
   - To retrain the VAE with your dataset or change training parameters, see train.py.
+  - Please extract the Image_dataset.zip before running. 
 5. Re-training UMAP for Visualization
   - If you train a non-default VAE model, you should also retrain the UMAP projection to ensure accurate latent-space visualization.
   - See train_apply_umap.py for details.
