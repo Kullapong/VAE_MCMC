@@ -25,7 +25,7 @@ VAE_MCMC/
 │   │── plot_mcmc_umap.py     # Visualize MCMC samples in UMAP space
 │   │── plot_analysis.py      # Combined analysis: loss curves, distributions, UMAPs
 │ 
-│── user_data/             # Output from running MCMC, user trained VAE
+│── user_data/             # Output from running MCMC, user trained VAE and UMAP model. (This directory will appear after running some module.)
 │ 
 │── Installation.txt       # Setup guides (conda, pip)
 │── requirements.txt       # List of Python dependencies
