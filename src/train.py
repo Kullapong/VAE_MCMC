@@ -65,7 +65,6 @@ if __name__ == '__main__':
         writer.writerow(['training_setup', f"pattern={args.pattern}", f"epochs={args.epochs}", f"batch_size={args.batch_size}"])
         # Write header for metrics
         writer.writerow(['epoch', 'bce', 'kld', 'total'])
-        writer.writerow(['epoch', 'bce', 'kld', 'total'])
 
         ds = MicrostructureDataset(args.pattern, transform=transforms.Compose([
             transforms.Resize((60,60)), transforms.ToTensor()
@@ -121,5 +120,6 @@ if __name__ == '__main__':
     with open(log_file, 'a', newline='') as cf:
         writer = csv.writer(cf)
         writer.writerow(['total_time', f"{total_time:.2f}"])
+
 
     print(f"Training complete in {total_time:.2f} seconds. Logs and model in {args.out_dir}")
